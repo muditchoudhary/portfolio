@@ -4,12 +4,17 @@
         "commonjs": true,
         "es2021": true
     },
-    "extends": "airbnb-base",
+    "extends": [
+        "airbnb-base", 
+        "prettier"
+    ],
     "overrides": [
     ],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
     "rules": {
+        "no-tabs": ["error", { "allowIndentationTabs": true }],
+        "no-unused-vars": ["off"]
     }
 }
