@@ -88,7 +88,9 @@ const Projects = (() => {
         const card = document.createElement("div");
         card.classList.add("border-2", "border-yellow-400", "h-fit", "w-[90%]", "rounded-md", "overflow-hidden", "shadow", "shadow-yellow-400")
         const cardImg = document.createElement("img");
-        cardImg.classList.add("h-[auto]", "w-[100%]");
+        if (cName.toLowerCase() === "Dodge Charger Game".toLowerCase()) {
+            cardImg.classList.add("h-[auto]", "w-[100%]", "md:h-[285px]", "xl:h-[539px]");
+        }
         cardImg.src = cImg;
 
         const cardName = document.createElement("h1");

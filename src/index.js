@@ -9,6 +9,7 @@ import githubIcon from './Assets/Icons/github.svg'
 import twitterIcon from './Assets/Icons/twitter.svg'
 import linkedinIcon from './Assets/Icons/linkedin.svg'
 import instagramIcon from './Assets/Icons/instagram.svg'
+import aboutmeImg from './Assets/Images/aboutme.svg'
 
 ImageController.addImg(document.querySelector('.my-profile > img'), myProfileImg);
 AnimationController.keyHightLightAnim("Tech Enthusiast");
@@ -21,5 +22,7 @@ for (let i = 0; i < 4; i++) {
     ImageController.addImg(document.querySelector(`#social${i + 1}`), socialIcons[i]);
 }
 
+// Adding about me image
+ImageController.addImg(document.querySelector('.about-me-img'), aboutmeImg);
 
 
